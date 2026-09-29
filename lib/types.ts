@@ -12,6 +12,8 @@ export interface Profile {
   email: string;
   phone: string;
   location: string;
+  education?: string;
+  skills?: string;
   updated_at?: string;
 }
 

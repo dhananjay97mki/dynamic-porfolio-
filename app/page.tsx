@@ -69,6 +69,8 @@ export default function Home() {
       <main className="relative z-10">
         <Hero
           profile={data.profile}
+          about={data.about}
+          skills={data.skills}
           socialLinks={data.socialLinks}
           resumeUrl={primaryResume}
         />

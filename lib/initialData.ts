@@ -7,7 +7,7 @@ export const initialPortfolioData: PortfolioData = {
     greeting: "Hi, I'm Dhananjay 👋",
     headline: 'AI Developer | Full Stack Engineer | Data Scientist',
     short_intro:
-      'Building AI-powered tools and scalable full-stack applications. Final-year AI student at PJLCE Nagpur & pursuing B.S. in Data Science at IIT Madras.',
+      'B.Tech graduate in Artificial Intelligence, building AI-powered tools and scalable full-stack applications. PJLCE Nagpur & pursuing B.S. in Data Science at IIT Madras.',
     profile_image_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600', // Polished default portrait
     primary_cta_text: 'View Projects',
     primary_cta_link: '#projects',
@@ -16,16 +16,18 @@ export const initialPortfolioData: PortfolioData = {
     email: 'dhanjanjaymoundekar1244@gmail.com',
     phone: '+91 7875654030',
     location: 'Nagpur, Maharashtra, India',
+    education: 'PJLCE (AI) & IIT Madras (Data Science)',
+    skills: 'Python, React, ML, NLP, Node.js, SQL',
   },
   about: {
     id: 'about-1',
     title: 'Driven by AI Innovation & Seamless User Experiences',
     story:
-      'I am a final-year Artificial Intelligence student at Priyadarshini J. L. College of Engineering (PJLCE), Nagpur, concurrently pursuing a B.S. in Data Science from IIT Madras. I specialize in bridging advanced Machine Learning / Natural Language Processing models with clean, performant full-stack web applications. Outside of code, I enjoy exploring geopolitics, historical events, and aviation developments.',
-    education_summary: 'B.Tech in Artificial Intelligence (PJLCE) & B.S. in Data Science (IIT Madras)',
+      'I am a B.Tech graduate in Artificial Intelligence from Priyadarshini J. L. College of Engineering (PJLCE), Nagpur, concurrently pursuing a B.S. in Data Science from IIT Madras. I specialize in bridging advanced Machine Learning / Natural Language Processing models with clean, performant full-stack web applications. Outside of code, I enjoy exploring geopolitics, historical events, and aviation developments.',
+    education_summary: 'PJLCE (AI) & IIT Madras (Data Science)',
     current_status: 'Open to Full-time AI / Software Engineering Roles & Internships',
     career_interests: 'AI Engineering, Full Stack Web Development, NLP Pipelines, Scalable Systems',
-    location: 'Nagpur / Remote',
+    location: 'Nagpur, Maharashtra, India',
   },
   certificates: [
     {

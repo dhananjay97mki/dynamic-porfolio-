@@ -91,12 +91,16 @@ export default function AdminProfilePage() {
           />
         </div>
 
-        {/* Profile Image Uploader */}
+        {/* Profile Image Uploader with Crop & Live Card Preview */}
         <FileUploader
-          label="Profile Photo"
+          label="Profile Photo (Crop & Adjust Enabled)"
           accept="image/*"
           currentUrl={profile.profile_image_url}
           onUploadComplete={(url) => setProfile({ ...profile, profile_image_url: url })}
+          enableCrop={true}
+          educationText={profile.education || 'PJLCE (AI) & IIT Madras (Data Science)'}
+          skillsText={profile.skills || 'Python, React, ML, NLP, Node.js, SQL'}
+          locationText={profile.location || 'Nagpur, Maharashtra, India'}
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -126,6 +130,30 @@ export default function AdminProfilePage() {
               type="text"
               value={profile.location}
               onChange={(e) => setProfile({ ...profile, location: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-blue-500"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Education Overlay Text</label>
+            <input
+              type="text"
+              placeholder="e.g. PJLCE (AI) & IIT Madras (Data Science)"
+              value={profile.education || ''}
+              onChange={(e) => setProfile({ ...profile, education: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Top Skills Overlay Text</label>
+            <input
+              type="text"
+              placeholder="e.g. Python, React, ML, NLP, Node.js, SQL"
+              value={profile.skills || ''}
+              onChange={(e) => setProfile({ ...profile, skills: e.target.value })}
               className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-blue-500"
             />
           </div>
